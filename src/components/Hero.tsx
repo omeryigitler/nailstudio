@@ -17,7 +17,9 @@ export default function Hero() {
             className="flex flex-col items-start"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-brand-heading leading-tight mb-6">
-              Reveal Your <span className="italic text-brand-gold">True Beauty</span> in the Heart of Malta.
+              Reveal Your <br />
+              <span className="italic text-brand-gold">True Beauty</span> <br />
+              in the Heart of Malta.
             </h1>
             
             <p className="text-lg text-brand-charcoal mb-4 font-medium">
@@ -71,24 +73,24 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="relative lg:ml-auto w-full max-w-lg mx-auto lg:mx-0"
+            className="relative lg:ml-auto w-full max-w-lg mx-auto lg:mx-0 group cursor-pointer"
           >
-            <div className="aspect-[4/5] bg-brand-cream rounded-2xl sm:rounded-[2rem] overflow-hidden shadow-2xl relative group">
+            <div className="aspect-[4/5] bg-brand-cream rounded-2xl sm:rounded-[2rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.15)] group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.25)] group-hover:-translate-y-2 transition-all duration-700 ease-out relative">
               <LazyImage 
                 src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80" 
                 alt="Premium Beauty Studio Malta"
-                className="group-hover:scale-105 transition-transform duration-1000"
+                className="group-hover:scale-105 transition-transform duration-700 ease-out"
               />
-              <div className="absolute inset-0 bg-brand-brown/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-              <div className="absolute inset-0 flex items-center justify-center text-white flex-col p-6 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0 z-20 pointer-events-none">
-                <span className="text-xl font-serif mb-2">Hero Image Placeholder</span>
-                <span className="text-sm text-white/80">Replace this area with a premium salon, portrait, or beauty treatment photo.</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-brand-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10"></div>
+              <div className="absolute inset-0 flex items-center justify-end pb-12 flex-col p-6 text-center opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-4 group-hover:translate-y-0 z-20 pointer-events-none">
+                <span className="text-2xl font-serif text-white mb-2 tracking-wide">Bespoke Treatments</span>
+                <span className="text-xs text-brand-cream/90 font-medium tracking-widest uppercase">Experience Luxury</span>
               </div>
             </div>
             
             {/* Decorative element */}
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-brand-gold/10 rounded-full blur-2xl"></div>
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-brown/5 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-brand-gold/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-brown/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
           </motion.div>
           
         </div>

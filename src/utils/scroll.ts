@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const scrollToSection = (e: React.MouseEvent | null, href: string) => {
   if (e) {
     e.preventDefault();
