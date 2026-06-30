@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Larisa Floroiu | Beauty Ambassador",
+  "description": "Premium Permanent Makeup, Powder Brows, and Nail Art services in Malta.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
