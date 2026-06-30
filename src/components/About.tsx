@@ -66,7 +66,8 @@ export default function About() {
             </span>
             
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl leading-tight text-brand-on-surface">
-              Larisa Floroiu: Your <span className="italic text-brand-primary font-normal">Beauty Ambassador</span>
+              Larisa Floroiu: <br />
+              Your <span className="italic text-brand-primary font-normal">Beauty Ambassador</span>
             </h2>
             
             <p className="text-sm sm:text-base text-brand-on-surface-variant leading-relaxed font-sans">
